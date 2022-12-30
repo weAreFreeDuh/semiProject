@@ -4,18 +4,18 @@ import lombok.Data;
 
 @Data
 public class THEATER {
-	private String the_Code;    //ê·¹ì¥ ë¶„ë¥˜ ì½”ë“œ 
-	private String the_Loc2;    //ê·¹ì¥ ìƒì„¸ì§€ì—­
-	private String the_Theater; //ìƒì˜ê´€
-	private String the_Name;	//ì˜í™”ì´ë¦„
-	private String the_Type;    //ì˜í™” íƒ€ì… 
+	private String the_Code;    //±ØÀå ºĞ·ù ÄÚµå 
+	private String the_Loc2;    //±ØÀå »ó¼¼Áö¿ª
+	private String the_Theater; //»ó¿µ°ü
+	private String the_Name;	//¿µÈ­ÀÌ¸§
+	private String the_Type;    //¿µÈ­ Å¸ÀÔ 
 	
-	private String the_Day;		//ê´€ëŒì¼ì
-	private String the_Start;		//ê´€ëŒì‹œì‘ì‹œê°„
-	private String the_End;		//ê´€ëŒëì‹œê°„
-	private String the_PosterName; //ì˜í™”í¬ìŠ¤í„°
-	private String the_Age;      //ì˜í™” ê´€ëŒê°€ 
+	private String the_Day;		//°ü¶÷ÀÏÀÚ
+	private String the_Start;		//°ü¶÷½ÃÀÛ½Ã°£
+	private String the_End;		//°ü¶÷³¡½Ã°£
+	private String the_PosterName; //¿µÈ­Æ÷½ºÅÍ
+	private String the_Age;      //¿µÈ­ °ü¶÷°¡ 
 	
-	private int the_Allseet;	//ì „ì²´ ì¢Œì„
-	private int the_Seet;  		//ì—¬ë¶„ ì¢Œì„. ì˜ˆë§¤ ì„±ê³µì‹œ ì˜ˆë§¤ ì¢Œì„ì€ -1 ì—…ë°ì´íŠ¸
+	private int the_Allseet;	//ÀüÃ¼ ÁÂ¼®
+	private int the_Seet;  		//¿©ºĞ ÁÂ¼®. ¿¹¸Å ¼º°ø½Ã ¿¹¸Å ÁÂ¼®Àº -1 ¾÷µ¥ÀÌÆ®
 }

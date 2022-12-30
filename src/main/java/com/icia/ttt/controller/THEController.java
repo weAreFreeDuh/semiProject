@@ -29,7 +29,7 @@ public class THEController {
 	@Autowired
 	private HttpSession session;
 	
-	// quickRes : ë¹ ë¥¸ ì˜ˆë§¤
+	// quickRes : ºü¸¥ ¿¹¸Å
 	@RequestMapping(value = "/quickRes", method = RequestMethod.GET)
 	public String quickRes() {
 		
@@ -45,7 +45,7 @@ public class THEController {
 		return result;
 	}
 	
-	// seetForm : ì¢Œì„ ì˜ˆë§¤
+	// seetForm : ÁÂ¼® ¿¹¸Å
 	@RequestMapping(value = "/seetForm", method = RequestMethod.GET)
 	public ModelAndView seetForm(@RequestParam("the_Code") String code) {
 			
@@ -54,7 +54,7 @@ public class THEController {
 		return mav;
 	}
 	
-	// setColor : ì¢Œì„ ìƒ‰ê¹”í‘œì‹œ
+	// setColor : ÁÂ¼® »ö±òÇ¥½Ã
 	@RequestMapping(value = "/setColor", method = RequestMethod.POST)
 	public @ResponseBody String setColor(@ModelAttribute RESERVATION res) {
 			
@@ -65,7 +65,7 @@ public class THEController {
 		return result;
 	}
 	
-	// doPay : ê²°ì œ
+	// doPay : °áÁ¦
 	@RequestMapping(value = "/doPay", method = RequestMethod.POST)
 	public @ResponseBody String doPay(@ModelAttribute RESERVATION res) {
 			
@@ -74,7 +74,7 @@ public class THEController {
 		return result;
 	}
 	
-	//deleteRes ì˜ˆë§¤ ì·¨ì†Œ
+	//deleteRes ¿¹¸Å Ãë¼Ò
 	@RequestMapping(value = "/deleteRes", method = RequestMethod.GET)
 	public ModelAndView deleteRes(@ModelAttribute RESERVATION res) {
 				

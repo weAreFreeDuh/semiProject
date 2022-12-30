@@ -8,25 +8,25 @@ import lombok.Data;
 
 @Data
 public class MOVIE {
-	private String mv_Name; 		//ì˜í™”ì´ë¦„
-	private String mv_Head;			//ì†Œê°œê¸€ ë¨¸ë¦¿ê¸€
-	private String mv_Content;		//ì†Œê°œê¸€ ì „ì²´
-	private String mv_Director;		//ê°ë…
-	private String mv_Actor;		//ë°°ìš°
-	private String mv_Type;			//ìƒì˜íƒ€ì…
-	private String mv_Genre;		//ì¥ë¥´
-	private String mv_Review;		//ì˜ˆê³ í¸ ì£¼ì†Œ
-	private String mv_Age;			//ë“±ê¸‰(all/ë‚˜ì´)
+	private String mv_Name; 		//¿µÈ­ÀÌ¸§
+	private String mv_Head;			//¼Ò°³±Û ¸Ó¸´±Û
+	private String mv_Content;		//¼Ò°³±Û ÀüÃ¼
+	private String mv_Director;		//°¨µ¶
+	private String mv_Actor;		//¹è¿ì
+	private String mv_Type;			//»ó¿µÅ¸ÀÔ
+	private String mv_Genre;		//Àå¸£
+	private String mv_Review;		//¿¹°íÆí ÁÖ¼Ò
+	private String mv_Age;			//µî±Ş(all/³ªÀÌ)
 	
-	private int mv_Res;				//ì˜ˆë§¤ìœ¨
-	private int mv_Aud;				//ëˆ„ì ê´€ê°ìˆ˜
-	private int mv_Time;			//ì´ì‹œê°„
-	private int mv_Point;			//í‰ì 
-	private int mv_Like;			//ì¢‹ì•„ìš”
+	private int mv_Res;				//¿¹¸ÅÀ²
+	private int mv_Aud;				//´©Àû°ü°´¼ö
+	private int mv_Time;			//ÃÑ½Ã°£
+	private int mv_Point;			//ÆòÁ¡
+	private int mv_Like;			//ÁÁ¾Æ¿ä
 	
-	private Date mv_Openday;		//ê°œë´‰ì¼ì
-	private int mv_Notice;          //ì˜ˆì •(ë°•ìŠ¤ì˜¤í”¼ìŠ¤ì™€ ìƒì˜ì˜ˆì •ì‘ êµ¬ë¶„)
-	private MultipartFile mv_Poster;       //ê´€ë¦¬ì ëŠ¥ë ¥ìœ¼ë¡œ ì˜í™” ì¶”ê°€í•  ê²½ìš°
-	private String mv_PosterName;   //ì‹¤ì œ í¬ìŠ¤í„° íŒŒì¼ ì´ë¦„
+	private Date mv_Openday;		//°³ºÀÀÏÀÚ
+	private int mv_Notice;          //¿¹Á¤(¹Ú½º¿ÀÇÇ½º¿Í »ó¿µ¿¹Á¤ÀÛ ±¸ºĞ)
+	private MultipartFile mv_Poster;       //°ü¸®ÀÚ ´É·ÂÀ¸·Î ¿µÈ­ Ãß°¡ÇÒ °æ¿ì
+	private String mv_PosterName;   //½ÇÁ¦ Æ÷½ºÅÍ ÆÄÀÏ ÀÌ¸§
 
 }

@@ -31,7 +31,7 @@ public class MVController {
 	@Autowired
 	private HttpSession session;
 
-	// csList : ì˜í™” ëª©ë¡
+	// csList : ¿µÈ­ ¸ñ·Ï
 	@RequestMapping(value = "/csMv", method = RequestMethod.GET)
 	public ModelAndView csList() {
 
@@ -40,7 +40,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvList : ì˜í™” ëª©ë¡
+	// mvList : ¿µÈ­ ¸ñ·Ï
 	@RequestMapping(value = "/allMv", method = RequestMethod.GET)
 	public ModelAndView mvList() {
 
@@ -49,7 +49,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvInfo :ìƒì„¸ë³´ê¸°
+	// mvInfo :»ó¼¼º¸±â
 	@RequestMapping(value = "/mvInfo", method = RequestMethod.GET)
 	public ModelAndView mvInfo(@RequestParam("mv_Name") String mv_Name) {
 		
@@ -58,8 +58,8 @@ public class MVController {
 		return mav;
 	}
 
-	// ë²„í¼ë§ ì˜¤ë¥˜
-	// mvLike : ì˜í™” ì¢‹ì•„ìš” ì¶”ê°€
+	// ¹öÆÛ¸µ ¿À·ù
+	// mvLike : ¿µÈ­ ÁÁ¾Æ¿ä Ãß°¡
 	@RequestMapping(value = "/mvLike", method = RequestMethod.GET)
 	public ModelAndView mvLike(@ModelAttribute MOVIE movie) {
 		
@@ -68,7 +68,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mlCheck : ì¢‹ì•„ìš” ì‘ì„±ìì¸ì§€ í™•ì¸
+	// mlCheck : ÁÁ¾Æ¿ä ÀÛ¼ºÀÚÀÎÁö È®ÀÎ
 	@RequestMapping(value = "/mlCheck", method = RequestMethod.POST)
 	public @ResponseBody MOVIELIKE mlCheck(@ModelAttribute MOVIELIKE movieLike) {
 		
@@ -77,7 +77,7 @@ public class MVController {
 		return mlCheck;
 	}
 
-	// movieLikeUp : ì¢‹ì•„ìš” ì˜¬ë¦¬ê¸°
+	// movieLikeUp : ÁÁ¾Æ¿ä ¿Ã¸®±â
 	@RequestMapping(value = "/movieLikeUp", method = RequestMethod.POST)
 	public @ResponseBody MOVIELIKE movieLikeUp(@ModelAttribute MOVIELIKE movieLike) {
 		
@@ -86,7 +86,7 @@ public class MVController {
 		return movieLikeUp;
 	}
 
-	// movieLikeDown : ì¢‹ì•„ìš” ë‚´ë¦¬ê¸°
+	// movieLikeDown : ÁÁ¾Æ¿ä ³»¸®±â
 	@RequestMapping(value = "/movieLikeDown", method = RequestMethod.POST)
 	public @ResponseBody MOVIELIKE movieLikeDown(@ModelAttribute MOVIELIKE movieLike) {
 		
@@ -95,7 +95,7 @@ public class MVController {
 		return movieLikeDown;
 	}
 
-	// movieLikeCount : ì¢‹ì•„ìš” ê°¯ìˆ˜ ë³´ì—¬ì£¼ê¸°
+	// movieLikeCount : ÁÁ¾Æ¿ä °¹¼ö º¸¿©ÁÖ±â
 	@RequestMapping(value = "/movieLikeCount", method = RequestMethod.POST)
 	public @ResponseBody int movieLikeCount(@ModelAttribute MOVIELIKE movieLike) {
 		
@@ -104,7 +104,7 @@ public class MVController {
 		return movieLikeCount;
 	}
 
-	// ì˜ˆë©”ìœ¨ 1ìœ„
+	// ¿¹¸ŞÀ² 1À§
 //	@RequestMapping(value = "/mvRes", method = RequestMethod.GET)
 //	public ModelAndView mvRes() {
 //		mav = mvsvc.mvRes();
@@ -112,14 +112,14 @@ public class MVController {
 //		return mav;
 //	}
 	
-	// mpPostForm ë¬´ë¹„ í¬ìŠ¤íŠ¸ ì‘ì„±ì°½
+	// mpPostForm ¹«ºñ Æ÷½ºÆ® ÀÛ¼ºÃ¢
 	@RequestMapping(value = "/mpPostForm", method = RequestMethod.GET)
 	public String mpPostForm() {
 
 		return "MV_PostForm";
 	}
 	
-	// mvWrite : ë¬´ë¹„ í¬ìŠ¤íŠ¸ ë“±ë¡
+	// mvWrite : ¹«ºñ Æ÷½ºÆ® µî·Ï
 	@RequestMapping(value = "/mvWrite", method = RequestMethod.POST)
 	public ModelAndView mvWrite(@ModelAttribute MOVIEPOST movie) throws IllegalStateException, IOException {
 		
@@ -128,7 +128,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvView : ë¬´ë¹„ í¬ìŠ¤íŠ¸ ìƒì„¸ë³´ê¸°
+	// mvView : ¹«ºñ Æ÷½ºÆ® »ó¼¼º¸±â
 	@RequestMapping(value = "/mvView", method = RequestMethod.GET)
 	public @ResponseBody ModelAndView mvView(@RequestParam("mp_Seq") int mpseq) {
 		
@@ -137,7 +137,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvPost : ë¬´ë¹„ í¬ìŠ¤íŠ¸ ëª©ë¡
+	// mvPost : ¹«ºñ Æ÷½ºÆ® ¸ñ·Ï
 	@RequestMapping(value = "/mvPost", method = RequestMethod.GET)
 	public ModelAndView mvpostList() {
 		
@@ -146,7 +146,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvModifyForm : ë¬´ë¹„ í¬ìŠ¤íŠ¸ ìˆ˜ì •í˜ì´ì§€ë¡œ ì´ë™
+	// mvModifyForm : ¹«ºñ Æ÷½ºÆ® ¼öÁ¤ÆäÀÌÁö·Î ÀÌµ¿
 	@RequestMapping(value = "/mvModifyForm", method = RequestMethod.GET)
 	public ModelAndView mvModifyForm(@RequestParam("mp_Seq") int mp_Seq) {
 		
@@ -155,7 +155,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvModify : ë¬´ë¹„ í¬ìŠ¤íŠ¸ ìˆ˜ì •
+	// mvModify : ¹«ºñ Æ÷½ºÆ® ¼öÁ¤
 	@RequestMapping(value = "/mvModify", method = RequestMethod.POST)
 	public ModelAndView mvModify(@ModelAttribute MOVIEPOST movie) throws IllegalStateException, IOException {
 		
@@ -164,7 +164,7 @@ public class MVController {
 		return mav;
 	}
 
-	// mvDelete : ë¬´ë¹„ í¬ìŠ¤íŠ¸ ì‚­ì œ
+	// mvDelete : ¹«ºñ Æ÷½ºÆ® »èÁ¦
 	@RequestMapping(value = "/mvDelete", method = RequestMethod.GET)
 	public ModelAndView mvDelete(@RequestParam(value = "mp_Seq", required = true) int mp_seq) {
 		

@@ -27,25 +27,25 @@ public class MController {
 	@Autowired
 	private HttpSession session;
 
-	// mJoinForm : íšŒì›ê°€ì… í˜ì´ì§€
+	// mJoinForm : È¸¿ø°¡ÀÔ ÆäÀÌÁö
 	@RequestMapping(value = "/mJoinForm", method = RequestMethod.GET)
 	public String mJoinForm() {
 		return "M_Join";
 	}
 
-	// mLoginForm: ë¡œê·¸ì¸ í˜ì´ì§€
+	// mLoginForm: ·Î±×ÀÎ ÆäÀÌÁö
 	@RequestMapping(value = "/mLoginForm", method = RequestMethod.GET)
 	public String mLoginForm() {
 		return "M_Login";
 	}
 
-	// mPwForm: ë¹„ë°€ë²ˆí˜¸ ì°¾ëŠ” í™ˆí˜ì´ì§€ë¡œ
+	// mPwForm: ºñ¹Ğ¹øÈ£ Ã£´Â È¨ÆäÀÌÁö·Î
 	@RequestMapping(value = "/mPwForm", method = RequestMethod.GET)
 	public String mPwForm() {
 		return "M_Pw";
 	}
 
-	// mJoin : íšŒì›ê°€ì…
+	// mJoin : È¸¿ø°¡ÀÔ
 	@RequestMapping(value = "/mJoin", method = RequestMethod.POST)
 	public ModelAndView mJoin(@ModelAttribute MEMBER member) throws IllegalStateException, IOException {
 
@@ -53,18 +53,18 @@ public class MController {
 		return mav;
 	}
 
-	// idoverlap : ì•„ì´ë”” ì¤‘ë³µì²´í¬ ajax
+	// idoverlap : ¾ÆÀÌµğ Áßº¹Ã¼Å© ajax
 	@RequestMapping(value = "/idoverlap", method = RequestMethod.POST)
 	public @ResponseBody String idoverlap(@RequestParam("memId") String memId) {
 
-		System.out.println("ajaxë¡œ ë„˜ì–´ì˜¨ memId : " + memId);
+		System.out.println("ajax·Î ³Ñ¾î¿Â memId : " + memId);
 		String result = msvc.idoverlap(memId);
 
-		System.out.println("dbì—ì„œ í™•ì¸í•œ resultë©”ì„¸ì§€ : " + result);
+		System.out.println("db¿¡¼­ È®ÀÎÇÑ result¸Ş¼¼Áö : " + result);
 		return result;
 	}
 
-	// mCheckEmail : ì´ë©”ì¼í™•ì¸
+	// mCheckEmail : ÀÌ¸ŞÀÏÈ®ÀÎ
 	@RequestMapping(value = "/mCheckEmail", method = RequestMethod.POST)
 	public @ResponseBody String checkEmail(@RequestParam("memEmail") String memEmail) {
 		System.out.println("memEmail : " + memEmail);
@@ -73,7 +73,7 @@ public class MController {
 		return uuid;
 	}
 
-	// mLogin : ë¡œê·¸ì¸
+	// mLogin : ·Î±×ÀÎ
 	@RequestMapping(value = "/mLogin", method = RequestMethod.POST)
 	public ModelAndView mLogin(@ModelAttribute MEMBER member) {
 
@@ -81,7 +81,7 @@ public class MController {
 		return mav;
 	}
 
-	// mLogout : ë¡œê·¸ì•„ì›ƒ
+	// mLogout : ·Î±×¾Æ¿ô
 	@RequestMapping(value = "/mLogout", method = RequestMethod.GET)
 	public String mLogout() {
 		session.invalidate();
@@ -89,14 +89,14 @@ public class MController {
 		return "index";
 	}
 
-	// mModiForm : íšŒì›ìˆ˜ì • í˜ì´ì§€
+	// mModiForm : È¸¿ø¼öÁ¤ ÆäÀÌÁö
 	@RequestMapping(value = "/mModiForm", method = RequestMethod.GET)
 	public ModelAndView mModiForm(@RequestParam("memId") String memId) {
 		mav = msvc.mModiForm(memId);
 		return mav;
 	}
 
-	// mPwChange : ë¹„ë°€ë²ˆí˜¸ ë³€ê²½
+	// mPwChange : ºñ¹Ğ¹øÈ£ º¯°æ
 	@RequestMapping(value = "/mPwChange", method = RequestMethod.POST)
 	public ModelAndView mPwChange(@ModelAttribute MEMBER member) {
 		System.out.println("controller");
@@ -104,14 +104,14 @@ public class MController {
 		return mav;
 	}
 
-	// myPage : ë‚˜ì˜í˜ì´ì§€
+	// myPage : ³ªÀÇÆäÀÌÁö
 	@RequestMapping(value = "/myPage", method = RequestMethod.GET)
 	public ModelAndView mView(@RequestParam("memId") String memId) {
 		mav = msvc.mView(memId);
 		return mav;
 	}
 
-	// mDelete : íšŒì›ì‚­ì œ
+	// mDelete : È¸¿ø»èÁ¦
 	@RequestMapping(value = "/mDelete", method = RequestMethod.GET)
 	public ModelAndView mDelete(@RequestParam("memId") String memId) {
 		mav = msvc.mDelete(memId);
@@ -119,7 +119,7 @@ public class MController {
 		return mav;
 	}
 
-	// mList : íšŒì›ëª©ë¡
+	// mList : È¸¿ø¸ñ·Ï
 	@RequestMapping(value = "/mList", method = RequestMethod.GET)
 	public ModelAndView mList() {
 

@@ -29,7 +29,7 @@ public class TRController {
 	private HttpSession session;
 
 	
-	// í˜ì´ì§€ ì´ë™ìš©
+	// ÆäÀÌÁö ÀÌµ¿¿ë
 	@RequestMapping(value = "/thTh", method = RequestMethod.GET)
 	public String test() {
 		return "TH_Thether";

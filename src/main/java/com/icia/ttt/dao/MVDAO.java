@@ -17,7 +17,7 @@ public class MVDAO {
 	@Autowired
 	SqlSessionTemplate sql;
 	
-	// ìž˜ëª»ë§Œë“¬
+	// Àß¸ø¸¸µë
 	public MOVIE mvView() {
 		return sql.selectOne("Movie.mvView");
 	}

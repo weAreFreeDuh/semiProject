@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class MOVIELIKE {
-	private String ml_Movie; // ì˜í™” ì´ë¦„
-	private String ml_Id;	// ì¢‹ì•„ìš” ëˆ„ë¥¸ ì‚¬ëŒ ì•„ì´ë””
+	private String ml_Movie; // ¿µÈ­ ÀÌ¸§
+	private String ml_Id;	// ÁÁ¾Æ¿ä ´©¸¥ »ç¶÷ ¾ÆÀÌµğ
 	private String ml_Check; //
 }

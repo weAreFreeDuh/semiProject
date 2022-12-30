@@ -8,16 +8,16 @@ import lombok.Data;
 
 @Data
 public class MOVIEPOST {
-	private String mp_Id;	    //ì•„ì´ë””
-	private String mp_PosterName;   //í¬ìŠ¤í„°
-	private String mp_Content;  //ë¬¸êµ¬
-	private String mp_Mvname;   //ì˜í™”ì´ë¦„
-	private String mp_Title;    //ì œëª©
+	private String mp_Id;	    //¾ÆÀÌµğ
+	private String mp_PosterName;   //Æ÷½ºÅÍ
+	private String mp_Content;  //¹®±¸
+	private String mp_Mvname;   //¿µÈ­ÀÌ¸§
+	private String mp_Title;    //Á¦¸ñ
 	
-	private Date mp_Time;       //ì‘ì„±ì‹œê°„
+	private Date mp_Time;       //ÀÛ¼º½Ã°£
 	private MultipartFile mp_Poster;
 	
-	private int mp_Like;        //ì¢‹ì•„ìš”
-	private int mp_Seq;			//í¬ìŠ¤í„° ë²ˆí˜¸
+	private int mp_Like;        //ÁÁ¾Æ¿ä
+	private int mp_Seq;			//Æ÷½ºÅÍ ¹øÈ£
 
 }

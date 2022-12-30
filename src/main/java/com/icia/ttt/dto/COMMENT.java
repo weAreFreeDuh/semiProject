@@ -6,11 +6,11 @@ import lombok.Data;
 
 @Data
 public class COMMENT {
-	private String cmt_Id;		//ì•„ì´ë””
-	private String cmt_Point;	//í‰ì 
-	private String cmt_Comment; //ê´€ëŒí‰
-	private String cmt_Mvname;  //ì˜í™”ì´ë¦„
+	private String cmt_Id;		//¾ÆÀÌµğ
+	private String cmt_Point;	//ÆòÁ¡
+	private String cmt_Comment; //°ü¶÷Æò
+	private String cmt_Mvname;  //¿µÈ­ÀÌ¸§
 	
-	private int cmt_Like;  //ì¢‹ì•„ìš”
-	private Date cmt_Time; //ì‘ì„± ì‹œê°„
+	private int cmt_Like;  //ÁÁ¾Æ¿ä
+	private Date cmt_Time; //ÀÛ¼º ½Ã°£
 }

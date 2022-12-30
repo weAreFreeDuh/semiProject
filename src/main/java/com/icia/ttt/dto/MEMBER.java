@@ -7,13 +7,13 @@ import lombok.Data;
 @Data
 public class MEMBER {
 
-	private String memId;			//ì•„ì´ë””
-	private String memPw;			//ë¹„ë°€ë²ˆí˜¸
-	private String memName;			//ì´ë¦„
-	private String memPhone;		//ì—°ë½ì²˜
-	private String memEmail;		//ì´ë©”ì¼
-	private String memTheater1;		//ì„ í˜¸ì˜í™”ê´€1
-	private String memTheater2;		//ì„ í˜¸ì˜í™”ê´€2
+	private String memId;			//¾ÆÀÌµğ
+	private String memPw;			//ºñ¹Ğ¹øÈ£
+	private String memName;			//ÀÌ¸§
+	private String memPhone;		//¿¬¶ôÃ³
+	private String memEmail;		//ÀÌ¸ŞÀÏ
+	private String memTheater1;		//¼±È£¿µÈ­°ü1
+	private String memTheater2;		//¼±È£¿µÈ­°ü2
 	
-	private Date memBirth;			//ìƒë…„ì›”ì¼
+	private Date memBirth;			//»ı³â¿ùÀÏ
 }

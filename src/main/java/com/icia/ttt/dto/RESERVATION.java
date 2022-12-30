@@ -4,29 +4,29 @@ import java.sql.Date;
 
 import lombok.Data;
 
-//ë¡œê·¸ì¸ì•„ì´ë”” ë‚ ì§œ ì˜í™”ì´ë¦„ ê·¹ì¥ì´ë¦„ ìƒì˜ê´€ íƒ€ì… ëë‚˜ëŠ”/ì‹œì‘ ì‹œê°„ ì´ì¸ì› ì–´ë¥¸ ì²­ì†Œë…„ ì–´ë¦°ì´ ê²°ì œê¸ˆì•¡ ì˜ˆë§¤ì¢Œì„
+//·Î±×ÀÎ¾ÆÀÌµğ ³¯Â¥ ¿µÈ­ÀÌ¸§ ±ØÀåÀÌ¸§ »ó¿µ°ü Å¸ÀÔ ³¡³ª´Â/½ÃÀÛ ½Ã°£ ÃÑÀÎ¿ø ¾î¸¥ Ã»¼Ò³â ¾î¸°ÀÌ °áÁ¦±İ¾× ¿¹¸ÅÁÂ¼®
 
 @Data
 public class RESERVATION {
 	
-	private int res_Seq; //ì·¨ì†Œí•  ë•Œ í•„ìš”
-	//private String res_Code; //ì¢Œì„ ì—…ëƒìš©
+	private int res_Seq; //Ãë¼ÒÇÒ ¶§ ÇÊ¿ä
+	//private String res_Code; //ÁÂ¼® ¾÷µ«¿ë
 	
-	private String res_Id;		//ì•„ì´ë””	
-	private String res_Mvname;	//ì˜í™”ì´ë¦„
-	private String res_Day;		//ê´€ëŒì¼ì
-	private String res_Loc2;	//ê·¹ì¥ ìƒì„¸ì§€ì—­
-	private String res_Theater; //ìƒì˜ê´€
+	private String res_Id;		//¾ÆÀÌµğ	
+	private String res_Mvname;	//¿µÈ­ÀÌ¸§
+	private String res_Day;		//°ü¶÷ÀÏÀÚ
+	private String res_Loc2;	//±ØÀå »ó¼¼Áö¿ª
+	private String res_Theater; //»ó¿µ°ü
 	
-	private String res_Start;		//ê´€ëŒ ì‹œì‘ ì‹œê°„
-	private String res_End;		//ê´€ëŒ ë ì‹œê°„
+	private String res_Start;		//°ü¶÷ ½ÃÀÛ ½Ã°£
+	private String res_End;		//°ü¶÷ ³¡ ½Ã°£
 	
-	private int res_Person;		//ì˜ˆë§¤ ì¸ì›
-	private int res_Price;		//ê²°ì œê¸ˆì•¡
-	private String res_Seet;    //ì˜ˆë§¤í•œ ì¢Œì„
-	private String res_Type;    //ì˜ˆë§¤í•œ ì˜í™”ì˜ íƒ€ì…(2d, 3d)
+	private int res_Person;		//¿¹¸Å ÀÎ¿ø
+	private int res_Price;		//°áÁ¦±İ¾×
+	private String res_Seet;    //¿¹¸ÅÇÑ ÁÂ¼®
+	private String res_Type;    //¿¹¸ÅÇÑ ¿µÈ­ÀÇ Å¸ÀÔ(2d, 3d)
 	
-	private int res_Adult;      //ì„±ì¸ ìˆ˜
-	private int res_Youth;		//ì²­ì†Œë…„ ìˆ˜
-	private int res_Child;		//ì–´ë¦°ì´ ìˆ˜
+	private int res_Adult;      //¼ºÀÎ ¼ö
+	private int res_Youth;		//Ã»¼Ò³â ¼ö
+	private int res_Child;		//¾î¸°ÀÌ ¼ö
 }

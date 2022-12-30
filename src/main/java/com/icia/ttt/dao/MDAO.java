@@ -15,27 +15,27 @@ public class MDAO {
 	@Autowired
 	SqlSessionTemplate sql;
 	
-	//ì•„ì´ë”” í™•ì¸
+	//¾ÆÀÌµğ È®ÀÎ
 	public String idCheck(String memId) {
 		return sql.selectOne("Member.idCheck", memId);
 	}
 	
-	//íšŒì›ê°€ì…
+	//È¸¿ø°¡ÀÔ
 	public int mJoin(MEMBER member) {		
 		return sql.insert("Member.mJoin", member);
 	}
 
-	//ë¡œê·¸ì¸
+	//·Î±×ÀÎ
 	public String mLogin(MEMBER member) {
 		return sql.selectOne("Member.mLogin", member);
 	}
 
-	//íšŒì› ìƒì„¸ì •ë³´
+	//È¸¿ø »ó¼¼Á¤º¸
 	public MEMBER mView(String memId) {
 		return sql.selectOne("Member.mView", memId);
 	}
 	
-	//íšŒì›ì •ë³´ ìˆ˜ì •
+	//È¸¿øÁ¤º¸ ¼öÁ¤
 	public int mModify(MEMBER member) {
 		return sql.update("Member.mPwchan", member);
 	}

@@ -4,9 +4,9 @@ import lombok.Data;
 
 @Data	
 public class COMMENTLIKE {
-	private String cl_CmtId;	//ëŒ“ê¸€ ì‘ì„±ìì˜ ì•„ì´ë””
-	private String cl_Movie;	//ì˜í™”ì´ë¦„ ìƒì„¸ë³´ê¸°ì¤‘
-	private String cl_Id;	//ì¢‹ì•„ìš” ëˆ„ë¥¸ ë¶„ ì•„ì´ë”” 
+	private String cl_CmtId;	//´ñ±Û ÀÛ¼ºÀÚÀÇ ¾ÆÀÌµğ
+	private String cl_Movie;	//¿µÈ­ÀÌ¸§ »ó¼¼º¸±âÁß
+	private String cl_Id;	//ÁÁ¾Æ¿ä ´©¸¥ ºĞ ¾ÆÀÌµğ 
 	private String cl_Check; //
 	private int cl_Num;	//
 }
